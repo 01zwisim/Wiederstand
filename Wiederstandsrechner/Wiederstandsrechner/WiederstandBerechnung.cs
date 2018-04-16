@@ -23,6 +23,20 @@ namespace WindowsFormsApplication1
         {
             this.reihe = wert;
         }
+        public double berechnen()
+        {
+            double ergebnis;
+            if (reihe)
+            {
+                ergebnis = r1 + r2;
+                return ergebnis;
+            }
+            else
+            {
+                ergebnis = (r1 * r2) / (r1 + r2);
+                return ergebnis;
+            }
+        }
 
     }
 }
